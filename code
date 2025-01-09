@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="survey">
+<h1 id="title">My Random Survey</h1>
+<p id="description">Thank you for wasting a few minutes of your time to fill out my random survey.</p>
+
+<form id="survey-form">
+<fieldset> 
+
+  <label id="name-label" for="name">Alias Name: <input placeholder="James Bond" id="name" name="name" type="text" required /></label>
+  
+  <label id="email-label" for="email">Legit Email: <input placeholder="jamesbond@gmail.com" id="email" name="email" type="email" required /></label> 
+  
+  <label id="number-label" for="number">Pick a number between 1 and 100: <input id="number" type="number" placeholder="pick 12" name="favorite-number" min="0" max="100" /></label>
+
+</fieldset>
+
+<fieldset>
+   <label for="dropdown">Which animal describes your personality best?
+  <select id="dropdown" name="animal">
+  <option value="">(select one)</option>
+  <option value="1">Lion</option>
+  <option value="2">Monkey</option>
+  <option value="3">Snake</option>
+  <option value="4">Koala</option>
+  <option value="5">Elephant</option>
+  <option value="6">Wolf</option>
+    </select>
+    </label>
+</fieldset>
+
+<fieldset>
+<legend>Pick one</legend>
+  <label><input id="coke" type="radio" name="soda" value="coke" checked> Coke</label>
+  <label><input id="tea" type="radio" name="soda" value="tea"> Tea</label>
+  <label><input id="water" type="radio" name="soda" value="water"> Water</label>
+  <label><input id="other" type="radio" name="soda" value="other"> Other</label>
+</fieldset>
+
+<fieldset>
+<legend>Pick a few</legend>
+    <input id="icecream" type="checkbox" name="snacks" value="icecream" checked><label for="icecream">Ice Cream</label>
+
+    <input class="few" id="chocolate" type="checkbox" name="snacks" value="chocolate"><label for="chocolate"> Chocolate</label>
+
+    <input id="candy" type="checkbox" name="snacks" value="candy"> <label for="candy"> Candy</label>
+
+<input id="chips" type="checkbox" name="snacks" value="chips"><label for="chips"> Chips</label>
+
+<input id="popcorn" type="checkbox" name="snacks" value="popcorn"><label for="popcorn"> Popcorn</label>
+
+<input id="nachos" type="checkbox" name="snacks" value="nachos"><label for="nachos"> Nachos</label>
+
+<input id="pretzels" type="checkbox" name="snacks" value="pretzels"><label for="pretzels"> Pretzels</label>
+
+</fieldset>
+
+<fieldset>
+
+  <label for="pickup-line"> What's the cheesiest pick-up line that you know?
+<textarea id="pickup-line" name="pickup-line" rows="3" cols="45" placeholder="Even in zero gravity, I would still fall for you <3"></textarea>
+  </label>
+
+</fieldset>
+
+<fieldset>
+  <legend>Did you enjoy this random survey?</legend>
+  <label><input id="yes" type="radio" name="yes-no" value="yes" checked> Yes.</label>
+  <label><input id="no" type="radio" name="yes-no" value="no"> Totally!</label>
+</fieldset>
+
+<button id="submit" type="submit">Submit</button>
+</form>
+</div>
+  </body>
+</html>
