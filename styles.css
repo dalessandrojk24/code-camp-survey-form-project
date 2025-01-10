@@ -28,13 +28,12 @@ form {
   padding-bottom: 0.5em;
 }
 
+/* David D'Alessandro
+Format fix for the survery element not filling the page
+Changed max-width from 500px to 90%*/
 .survey {
-  width: 80%;
+  max-width: 90%;
   background-color: white;
-  margin-left: 0;
-  margin-right: 0;
-  padding: 20px;
-  max-width: 500px;
 }
 
 label {
